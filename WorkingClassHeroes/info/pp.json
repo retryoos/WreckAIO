@@ -1,0 +1,24 @@
+{
+    "d": {
+        "IsClickAndCollectOnly": false,
+        "__type": "CitrusStore.CitrusStore.WightStatusObj",
+        "appliedCoupon": 0,
+        "appliedDiscountList": null,
+        "appliedGiftCert": 0,
+        "cartCountryTax": 0,
+        "cartValue": 0,
+        "cloudGiftVoucher": null,
+        "currencySymbol": "\u00a3",
+        "currentCartValue": 0,
+        "cycleschemeCert": null,
+        "cycleschemeSurchargeTotal": 0,
+        "discountApplied": null,
+        "errorMsg": "https://www.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-9TC79210UJ994893B",
+        "returnAddress": null,
+        "returnCustomer": null,
+        "returnItems": null,
+        "rewardPointsRedeemed": 0,
+        "shippingCharge": 0,
+        "status": true
+    }
+}

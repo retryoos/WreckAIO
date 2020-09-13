@@ -1,0 +1,115 @@
+Working Class Heroes CC Account Checkout
+-----------------------------------------
+**need to send a login request at first**
+-----------------------------------------
+
+post - https://www.workingclassheroes.co.uk/wsCitrusStore.asmx/WightCheckCustomerLogin - {}
+
+post - https://www.workingclassheroes.co.uk/wsCitrusStore.asmx/WightLoadDeliverySelection - {}
+
+
+Maybe not needed
+post - https://www.workingclassheroes.co.uk/wsCitrusStore.asmx/WightGetCheckoutObjects - {}
+post - https://www.workingclassheroes.co.uk/wsCitrusStore.asmx/newCheckoutRewardsPoints - {"ncCustomerID":288283,"ncOrderTotal":94.95}
+
+
+post - https://www.workingclassheroes.co.uk/wsCitrusStore.asmx/WightLoadShippingOptions - {"firstName":"Angelos" , "lastName":"Kalligaridis", "company":"", "address1":"Aramex House Old Bath Road Colnbrook", "address2":"ATH 249", "city":"Slough Berkshire", "postcode":"SL3 0NS", "country":"GB"}
+
+post - https://www.workingclassheroes.co.uk/wsCitrusStore.asmx/WightPostShippingDetails - {"firstName":"Angelos" , "lastName":"Kalligaridis", "company":"", "address1":"Aramex House Old Bath Road Colnbrook", "address2":"ATH 249", "city":"Slough Berkshire", "postcode":"SL3 0NS", "phone":"6972286676", "country":"GB","selectedShipping":{"IsPremium":true,"bookingCode":"ExpresspakDpdNextDay","carrierCode":"ExpresspakDpdNextDay","carrierCustom1":"","carrierCustom2":"","carrierCustom3":"","carrierServiceCode":"ExpresspakDpdNextDay","carrierServiceTypeCode":"","collectionSlots":null,"collectionWindow":{"to":"2020-09-01T12:26:42.9029251+01:00","from":"2020-09-01T12:26:42.9029251+01:00"},"cutOffDateTime":"2020-09-01T12:26:42.9029251+01:00","deliverySlots":null,"deliveryWindow":{"to":"2020-09-02T12:26:42.9029251+01:00","from":"2020-09-02T12:26:42.9029251+01:00"},"groupCodes":null,"name":"DPD Premium Next Day Tracked","nominatableCollectionSlot":false,"nominatableDeliverySlot":false,"recipientTimeZone":null,"score":0,"senderTimeZone":null,"shippingCharge":5.5,"shippingCost":4.38,"taxAndDuty":0,"taxAndDutyStatusText":null,"vatRate":0},"nickname":"main addy"}
+
+post - https://www.workingclassheroes.co.uk/wsCitrusStore.asmx/WightHandlePaymentSelector - {"MethodType":"Standard","SpecialInstructions":"","PaymentMethod":"credit card","cardTypeUid":9,"cardType":"MasterCard","cardNumber":"5335151515615655","secureCode":"533","expMonth":"02","expYear":"2022","token":"","selectedShipping":{"IsPremium":false,"bookingCode":"","carrierCode":"","carrierCustom1":"","carrierCustom2":"","carrierCustom3":"","carrierServiceCode":"","carrierServiceTypeCode":"","collectionSlots":null,"collectionWindow":{"to":"2019-08-12T00:00:00","from":"2019-08-12T00:00:00"},"cutOffDateTime":"2019-08-12T00:00:00","deliverySlots":null,"deliveryWindow":{"to":"2019-08-13T00:00:00","from":"2019-08-13T00:00:00"},"groupCodes":null,"name":"","nominatableCollectionSlot":false,"nominatableDeliverySlot":false,"recipientTimeZone":null,"score":0,"senderTimeZone":null,"shippingCharge":0,"shippingCost":0,"taxAndDuty":0,"taxAndDutyStatusText":null,"vatRate":0},"paypalToken":"","payPalPayerID":""}
+
+
+
+-----------------------------------------------------------------------------------------
+Working Class Heroes CC Guest Checkout
+-----------------------------------------------------------------------------------------
+
+post - https://www.workingclassheroes.co.uk/wsCitrusStore.asmx/WightCreateAnonymousCustomerLogin - {"emailAddress":"glacdimitris294+34@gmail.com" , "firstName":"John" , "lastName":"Smith","GDPRAllowed": false}
+
+post - https://www.workingclassheroes.co.uk/wsCitrusStore.asmx/WightLoadDeliverySelection - {}
+
+
+Maybe not needed
+post - https://www.workingclassheroes.co.uk/wsCitrusStore.asmx/WightGetCheckoutObjects - {}
+post - https://www.workingclassheroes.co.uk/wsCitrusStore.asmx/newCheckoutRewardsPoints - {"ncCustomerID":288283,"ncOrderTotal":94.95}
+
+
+post - https://www.workingclassheroes.co.uk/wsCitrusStore.asmx/WightLoadShippingOptions - {"firstName":"John" , "lastName":"Smith", "company":"", "address1":"fron 39", "address2":"", "city":"athens", "postcode":"11147", "country":"GR"}
+
+post - https://www.workingclassheroes.co.uk/wsCitrusStore.asmx/WightPostShippingDetails - {"firstName":"John" , "lastName":"Smith", "company":"", "address1":"fron 39", "address2":"", "city":"athens", "postcode":"11147", "phone":"6972284767", "country":"GR","selectedShipping":{"IsPremium":false,"bookingCode":"InternationalSigned","carrierCode":"InternationalSigned","carrierCustom1":"","carrierCustom2":"","carrierCustom3":"","carrierServiceCode":"InternationalSigned","carrierServiceTypeCode":"","collectionSlots":null,"collectionWindow":{"to":"2020-09-01T13:03:24.3442392+01:00","from":"2020-09-01T13:03:24.3442392+01:00"},"cutOffDateTime":"2020-09-01T13:03:24.3442392+01:00","deliverySlots":null,"deliveryWindow":{"to":"2020-09-10T13:03:24.3442392+01:00","from":"2020-09-04T13:03:24.3442392+01:00"},"groupCodes":null,"name":"Royal Mail International","nominatableCollectionSlot":false,"nominatableDeliverySlot":false,"recipientTimeZone":null,"score":0,"senderTimeZone":null,"shippingCharge":16.990000000000002,"shippingCost":0,"taxAndDuty":0,"taxAndDutyStatusText":null,"vatRate":0},"nickname":""}
+
+post - https://www.workingclassheroes.co.uk/wsCitrusStore.asmx/WightLoadPaymentSelection - {}
+
+post - 	https://www.workingclassheroes.co.uk/wsCitrusStore.asmx/WightHandlePaymentSelector - {"MethodType":"Standard","SpecialInstructions":"","PaymentMethod":"credit card","cardTypeUid":8,"cardType":"Visa","cardNumber":"4917123002563023","secureCode":"125","expMonth":"02","expYear":"2022","token":"","selectedShipping":{"IsPremium":false,"bookingCode":"","carrierCode":"","carrierCustom1":"","carrierCustom2":"","carrierCustom3":"","carrierServiceCode":"","carrierServiceTypeCode":"","collectionSlots":null,"collectionWindow":{"to":"2019-08-12T00:00:00","from":"2019-08-12T00:00:00"},"cutOffDateTime":"2019-08-12T00:00:00","deliverySlots":null,"deliveryWindow":{"to":"2019-08-13T00:00:00","from":"2019-08-13T00:00:00"},"groupCodes":null,"name":"","nominatableCollectionSlot":false,"nominatableDeliverySlot":false,"recipientTimeZone":null,"score":0,"senderTimeZone":null,"shippingCharge":0,"shippingCost":0,"taxAndDuty":0,"taxAndDutyStatusText":null,"vatRate":0},"paypalToken":"","payPalPayerID":""}
+
+ 
+# check if there is a difference on the different times checkout objects and reward points are called
+# take a look at checkout objects for different things that are needed to send some post requests
+# check headers for each checkout cc request
+
+self.guest_checkout()
+self.load_delivery()
+self.delivery_address()
+self.parse_checkout_objects()
+self.finalize_delivery()
+self.load_payment()
+self.payment_cc()
+
+
+after first address / https://www.workingclassheroes.co.uk/wsCitrusStore.asmx/WightGetCheckoutObjects
+{"d":"{\"status\":true,\"errorMsg\":\"\",\"returnCustomer\":{\"m_oCustInfo\":{\"FirstName\":\"Angelos\",\"GDPRAllowed\":true,\"DateModified\":\"2020-08-14T09:48:29\",\"Referer\":0,\"RefererDate\":\"\",\"HttpReferer\":\"\",\"CustomerGroup\":0,\"TradeAccount\":false,\"TradeAccountNumber\":\"\",\"Balance\":0.0,\"Currency\":\"GBP\",\"LanguageCode\":\"GB\",\"Email\":\"dimitriskalligaridis@gmail.com\",\"PassWord\":\"ZkPQGbqs@A;6V95Rx`\",\"ID\":288283,\"LastName\":\"kalligaridis\",\"Subscribed\":true},\"m_bValid\":false,\"m_strErrorMessage\":null,\"m_strSessionID\":\"41f9858d-84e3-4f26-878f-9fce0f13d23e\",\"m_bSignedIn\":true,\"m_nCustomerID\":288283,\"m_objAddresses\":null,\"m_strPassword\":null,\"m_nCustomerGroup\":0,\"m_objSavedCart\":null,\"m_strWishListSavedCartMessage\":null,\"m_strOandaRate\":\"\",\"m_strOandaISO\":\"\"},\"returnAddress\":null,\"returnItems\":[{\"ProductId\":207377,\"m_nCustomerGroup\":0,\"m_arAttributes\":[{\"AttributeDetails\":[{\"UID\":177557,\"AttributeID\":23001,\"CustomerSpecificAttributePrice\":0.0,\"Order\":0,\"Name\":\"UK 7\",\"Name_Price_Info\":\"UK 7\",\"CartPrice\":\"\",\"CartWeight\":\"\",\"Price\":0.0,\"Required\":true,\"FilePath\":\"\",\"Weight\":0.0,\"PriceChange\":1,\"WeightChange\":1,\"SmallImage\":null,\"LargeImage\":null,\"Customor_Custom_Description\":\"\",\"Code\":\"CD4990-001-7\",\"Description\":\"\"}],\"Name\":\"UK Shoe Size\",\"UID\":23001,\"Required\":true,\"AttributeType\":0}],\"m_nQuantity\":1,\"m_arrGiftWrap\":[],\"mEbay\":false,\"meBayPrice\":0.0,\"BookingReference\":\"\",\"TagAlongProductID\":0,\"TagAlongParent\":0,\"ProductPrice\":74.95,\"ItemPrice\":74.95,\"ProductImage\":\"images/BlackNikeGtsReturn.jpg\",\"ProductName\":\"Nike SB GTS Return Premium Shoes Black White\",\"ProductCode\":\"CD4990-001-\",\"SavingAmount\":0.0,\"SavingPercentage\":0.0,\"CycleSchemeSurchargeValue\":0.0,\"CycleSchemeRestricted\":false}],\"discountApplied\":null,\"appliedDiscountList\":[],\"cloudGiftVoucher\":null,\"rewardPointsRedeemed\":0.0,\"cartValue\":74.95,\"currentCartValue\":74.95,\"appliedCoupon\":0.0,\"appliedGiftCert\":0.0,\"cartCountryTax\":0.00,\"shippingCharge\":0.0,\"cycleschemeCert\":null,\"currencySymbol\":\"£\",\"cycleschemeSurchargeTotal\":0.0,\"IsClickAndCollectOnly\":false}"}
+
+after selecting shipping option (worldwide) / https://www.workingclassheroes.co.uk/wsCitrusStore.asmx/WightGetCheckoutObjects
+{"d":"{\"status\":true,\"errorMsg\":\"\",\"returnCustomer\":{\"m_oCustInfo\":{\"FirstName\":\"Angelos\",\"GDPRAllowed\":true,\"DateModified\":\"2020-08-14T09:48:29\",\"Referer\":0,\"RefererDate\":\"\",\"HttpReferer\":\"\",\"CustomerGroup\":0,\"TradeAccount\":false,\"TradeAccountNumber\":\"\",\"Balance\":0.0,\"Currency\":\"GBP\",\"LanguageCode\":\"GB\",\"Email\":\"dimitriskalligaridis@gmail.com\",\"PassWord\":\"ZkPQGbqs@A;6V95Rx`\",\"ID\":288283,\"LastName\":\"kalligaridis\",\"Subscribed\":true},\"m_bValid\":false,\"m_strErrorMessage\":null,\"m_strSessionID\":\"41f9858d-84e3-4f26-878f-9fce0f13d23e\",\"m_bSignedIn\":true,\"m_nCustomerID\":288283,\"m_objAddresses\":null,\"m_strPassword\":null,\"m_nCustomerGroup\":0,\"m_objSavedCart\":null,\"m_strWishListSavedCartMessage\":null,\"m_strOandaRate\":\"\",\"m_strOandaISO\":\"\"},\"returnAddress\":null,\"returnItems\":[{\"ProductId\":207377,\"m_nCustomerGroup\":0,\"m_arAttributes\":[{\"AttributeDetails\":[{\"UID\":177557,\"AttributeID\":23001,\"CustomerSpecificAttributePrice\":0.0,\"Order\":0,\"Name\":\"UK 7\",\"Name_Price_Info\":\"UK 7\",\"CartPrice\":\"\",\"CartWeight\":\"\",\"Price\":0.0,\"Required\":true,\"FilePath\":\"\",\"Weight\":0.0,\"PriceChange\":1,\"WeightChange\":1,\"SmallImage\":null,\"LargeImage\":null,\"Customor_Custom_Description\":\"\",\"Code\":\"CD4990-001-7\",\"Description\":\"\"}],\"Name\":\"UK Shoe Size\",\"UID\":23001,\"Required\":true,\"AttributeType\":0}],\"m_nQuantity\":1,\"m_arrGiftWrap\":[],\"mEbay\":false,\"meBayPrice\":0.0,\"BookingReference\":\"\",\"TagAlongProductID\":0,\"TagAlongParent\":0,\"ProductPrice\":74.95,\"ItemPrice\":74.95,\"ProductImage\":\"images/BlackNikeGtsReturn.jpg\",\"ProductName\":\"Nike SB GTS Return Premium Shoes Black White\",\"ProductCode\":\"CD4990-001-\",\"SavingAmount\":0.0,\"SavingPercentage\":0.0,\"CycleSchemeSurchargeValue\":0.0,\"CycleSchemeRestricted\":false}],\"discountApplied\":null,\"appliedDiscountList\":[],\"cloudGiftVoucher\":null,\"rewardPointsRedeemed\":0.0,\"cartValue\":74.95,\"currentCartValue\":74.95,\"appliedCoupon\":0.0,\"appliedGiftCert\":0.0,\"cartCountryTax\":0.00,\"shippingCharge\":0.0,\"cycleschemeCert\":null,\"currencySymbol\":\"£\",\"cycleschemeSurchargeTotal\":0.0,\"IsClickAndCollectOnly\":false}"}
+
+after clicking continute on shipping and on the shipping option / https://www.workingclassheroes.co.uk/wsCitrusStore.asmx/WightPostShippingDetails
+{"d":"{\"status\":true,\"errorMsg\":\"\",\"returnCustomer\":{\"m_oCustInfo\":{\"FirstName\":\"Angelos\",\"GDPRAllowed\":true,\"DateModified\":\"2020-08-14T09:48:29\",\"Referer\":0,\"RefererDate\":\"\",\"HttpReferer\":\"\",\"CustomerGroup\":0,\"TradeAccount\":false,\"TradeAccountNumber\":\"\",\"Balance\":0.0,\"Currency\":\"GBP\",\"LanguageCode\":\"GB\",\"Email\":\"dimitriskalligaridis@gmail.com\",\"PassWord\":\"ZkPQGbqs@A;6V95Rx`\",\"ID\":288283,\"LastName\":\"kalligaridis\",\"Subscribed\":true},\"m_bValid\":false,\"m_strErrorMessage\":null,\"m_strSessionID\":\"41f9858d-84e3-4f26-878f-9fce0f13d23e\",\"m_bSignedIn\":true,\"m_nCustomerID\":288283,\"m_objAddresses\":[{\"ID\":229275,\"Type\":7,\"NickName\":\"main addy\",\"Name\":\"Angelos Kalligaridis\",\"FirstName\":\"Angelos\",\"LastName\":\"Kalligaridis\",\"MI\":\"\",\"Company\":\"\",\"Address1\":\"Aramex House Old Bath Road Colnbrook\",\"Address2\":\"ATH 249\",\"City\":\"Slough Berkshire\",\"State\":\"\",\"Zip\":\"SL3 0NS\",\"Country\":\"GB\",\"Phone\":\"6972286676\",\"Fax\":\"\",\"EMail\":\"dimitriskalligaridis@gmail.com\",\"CountryName\":null,\"URL\":null,\"Image\":null,\"MenSizingChart\":\"\",\"WomensSizingChart\":\"\",\"UnisexSizingChart\":\"\",\"BrandInfo\":\"\",\"BlockCoupons\":false,\"BrandPageTitle\":\"\",\"BrandH1Tag\":\"\",\"MetaDescription\":\"\"},{\"ID\":232816,\"Type\":7,\"NickName\":\"Shipping Address - Angelos kalligaridis - 11147\",\"Name\":\"Angelos kalligaridis\",\"FirstName\":\"Angelos\",\"LastName\":\"kalligaridis\",\"MI\":\"\",\"Company\":\"\",\"Address1\":\"faron 39\",\"Address2\":\"\",\"City\":\"athens\",\"State\":\"\",\"Zip\":\"11147\",\"Country\":\"GR\",\"Phone\":\"69724575738\",\"Fax\":\"\",\"EMail\":\"dimitriskalligaridis@gmail.com\",\"CountryName\":null,\"URL\":null,\"Image\":null,\"MenSizingChart\":\"\",\"WomensSizingChart\":\"\",\"UnisexSizingChart\":\"\",\"BrandInfo\":\"\",\"BlockCoupons\":false,\"BrandPageTitle\":\"\",\"BrandH1Tag\":\"\",\"MetaDescription\":\"\"}],\"m_strPassword\":null,\"m_nCustomerGroup\":0,\"m_objSavedCart\":null,\"m_strWishListSavedCartMessage\":null,\"m_strOandaRate\":\"\",\"m_strOandaISO\":\"\"},\"returnAddress\":{\"StoreID\":0,\"ShipCarrierCode\":\"InternationalSigned\",\"ShipMethod\":\"Metapack\",\"Instructions\":null,\"ShipType\":0.0,\"CODTotal\":0.0,\"TotalBilled\":0.0,\"TotalRemaining\":0.0,\"DiscountsTotal\":0.0,\"CountryTaxRate\":0.0,\"StateTaxRate\":0.0,\"BackOrderQuantity\":0,\"LocalTaxRate\":0.0,\"IsShippingTaxed\":false,\"ShippingTotal\":0.0,\"ShippableShippingTotal\":0.0,\"BackOrderShippingTotal\":0.0,\"HandlingTotal\":0.0,\"ID\":0,\"Type\":0,\"NickName\":\"Shipping Address - Angelos kalligaridis - 11147\",\"Name\":\"Angelos kalligaridis\",\"FirstName\":\"Angelos\",\"LastName\":\"kalligaridis\",\"MI\":\"\",\"Company\":\"\",\"Address1\":\"faron 39\",\"Address2\":\"\",\"City\":\"athens\",\"State\":\"\",\"Zip\":\"11147\",\"Country\":\"GR\",\"Phone\":\"69724575738\",\"Fax\":\"\",\"EMail\":\"dimitriskalligaridis@gmail.com\",\"CountryName\":null,\"URL\":null,\"Image\":null,\"MenSizingChart\":\"\",\"WomensSizingChart\":\"\",\"UnisexSizingChart\":\"\",\"BrandInfo\":\"\",\"BlockCoupons\":false,\"BrandPageTitle\":\"\",\"BrandH1Tag\":\"\",\"MetaDescription\":\"\"},\"returnItems\":[{\"ProductId\":207377,\"m_nCustomerGroup\":0,\"m_arAttributes\":[{\"AttributeDetails\":[{\"UID\":177557,\"AttributeID\":23001,\"CustomerSpecificAttributePrice\":0.0,\"Order\":0,\"Name\":\"UK 7\",\"Name_Price_Info\":\"UK 7\",\"CartPrice\":\"\",\"CartWeight\":\"\",\"Price\":0.0,\"Required\":true,\"FilePath\":\"\",\"Weight\":0.0,\"PriceChange\":1,\"WeightChange\":1,\"SmallImage\":null,\"LargeImage\":null,\"Customor_Custom_Description\":\"\",\"Code\":\"CD4990-001-7\",\"Description\":\"\"}],\"Name\":\"UK Shoe Size\",\"UID\":23001,\"Required\":true,\"AttributeType\":0}],\"m_nQuantity\":1,\"m_arrGiftWrap\":[],\"mEbay\":false,\"meBayPrice\":0.0,\"BookingReference\":\"\",\"TagAlongProductID\":0,\"TagAlongParent\":0,\"ProductPrice\":74.95,\"ItemPrice\":74.95,\"ProductImage\":\"images/BlackNikeGtsReturn.jpg\",\"ProductName\":\"Nike SB GTS Return Premium Shoes Black White\",\"ProductCode\":\"CD4990-001-\",\"SavingAmount\":0.0,\"SavingPercentage\":0.0,\"CycleSchemeSurchargeValue\":0.0,\"CycleSchemeRestricted\":false}],\"discountApplied\":null,\"appliedDiscountList\":[],\"cloudGiftVoucher\":null,\"rewardPointsRedeemed\":0.0,\"cartValue\":74.95,\"currentCartValue\":74.95,\"appliedCoupon\":0.0,\"appliedGiftCert\":0.0,\"cartCountryTax\":0.00,\"shippingCharge\":16.99,\"cycleschemeCert\":null,\"currencySymbol\":\"£\",\"cycleschemeSurchargeTotal\":0.0,\"IsClickAndCollectOnly\":false}"}
+
+after clicking place order (final step)
+{"d":"{\"status\":true,\"errorMsg\":\"\",\"returnCustomer\":{\"m_oCustInfo\":{\"FirstName\":\"Angelos\",\"GDPRAllowed\":true,\"DateModified\":\"2020-08-14T09:48:29\",\"Referer\":0,\"RefererDate\":\"\",\"HttpReferer\":\"\",\"CustomerGroup\":0,\"TradeAccount\":false,\"TradeAccountNumber\":\"\",\"Balance\":0.0,\"Currency\":\"GBP\",\"LanguageCode\":\"GB\",\"Email\":\"dimitriskalligaridis@gmail.com\",\"PassWord\":\"ZkPQGbqs@A;6V95Rx`\",\"ID\":288283,\"LastName\":\"kalligaridis\",\"Subscribed\":true},\"m_bValid\":false,\"m_strErrorMessage\":null,\"m_strSessionID\":\"41f9858d-84e3-4f26-878f-9fce0f13d23e\",\"m_bSignedIn\":true,\"m_nCustomerID\":288283,\"m_objAddresses\":null,\"m_strPassword\":null,\"m_nCustomerGroup\":0,\"m_objSavedCart\":null,\"m_strWishListSavedCartMessage\":null,\"m_strOandaRate\":\"\",\"m_strOandaISO\":\"\"},\"returnAddress\":{\"StoreID\":0,\"ShipCarrierCode\":null,\"ShipMethod\":\"Value Based Shipping\",\"Instructions\":null,\"ShipType\":1.0,\"CODTotal\":0.0,\"TotalBilled\":183.88,\"TotalRemaining\":0.0,\"DiscountsTotal\":0.0,\"CountryTaxRate\":0.00,\"StateTaxRate\":0.0,\"BackOrderQuantity\":0,\"LocalTaxRate\":0.0,\"IsShippingTaxed\":false,\"ShippingTotal\":16.99,\"ShippableShippingTotal\":16.99,\"BackOrderShippingTotal\":0.0,\"HandlingTotal\":0.0,\"ID\":0,\"Type\":3,\"NickName\":\"Shipping Address - Angelos kalligaridis - 11147\",\"Name\":\"Angelos kalligaridis\",\"FirstName\":\"Angelos\",\"LastName\":\"kalligaridis\",\"MI\":\"\",\"Company\":\"\",\"Address1\":\"faron 39\",\"Address2\":\"\",\"City\":\"athens\",\"State\":\"\",\"Zip\":\"11147\",\"Country\":\"GR\",\"Phone\":\"69724575738\",\"Fax\":\"\",\"EMail\":\"dimitriskalligaridis@gmail.com\",\"CountryName\":null,\"URL\":null,\"Image\":null,\"MenSizingChart\":\"\",\"WomensSizingChart\":\"\",\"UnisexSizingChart\":\"\",\"BrandInfo\":\"\",\"BlockCoupons\":false,\"BrandPageTitle\":\"\",\"BrandH1Tag\":\"\",\"MetaDescription\":\"\"},\"returnItems\":[{\"ProductId\":207377,\"m_nCustomerGroup\":0,\"m_arAttributes\":[{\"AttributeDetails\":[{\"UID\":177557,\"AttributeID\":23001,\"CustomerSpecificAttributePrice\":0.0,\"Order\":0,\"Name\":\"UK 7\",\"Name_Price_Info\":\"UK 7\",\"CartPrice\":\"\",\"CartWeight\":\"\",\"Price\":0.0,\"Required\":true,\"FilePath\":\"\",\"Weight\":0.0,\"PriceChange\":1,\"WeightChange\":1,\"SmallImage\":null,\"LargeImage\":null,\"Customor_Custom_Description\":\"\",\"Code\":\"CD4990-001-7\",\"Description\":\"\"}],\"Name\":\"UK Shoe Size\",\"UID\":23001,\"Required\":true,\"AttributeType\":0}],\"m_nQuantity\":1,\"m_arrGiftWrap\":[],\"mEbay\":false,\"meBayPrice\":0.0,\"BookingReference\":\"\",\"TagAlongProductID\":0,\"TagAlongParent\":0,\"ProductPrice\":74.95,\"ItemPrice\":74.95,\"ProductImage\":\"images/BlackNikeGtsReturn.jpg\",\"ProductName\":\"Nike SB GTS Return Premium Shoes Black White\",\"ProductCode\":\"CD4990-001-\",\"SavingAmount\":0.0,\"SavingPercentage\":0.0,\"CycleSchemeSurchargeValue\":0.0,\"CycleSchemeRestricted\":false}],\"discountApplied\":null,\"appliedDiscountList\":[],\"cloudGiftVoucher\":null,\"rewardPointsRedeemed\":0.0,\"cartValue\":74.95,\"currentCartValue\":74.95,\"appliedCoupon\":0.0,\"appliedGiftCert\":0.0,\"cartCountryTax\":0.00,\"shippingCharge\":16.99,\"cycleschemeCert\":null,\"currencySymbol\":\"£\",\"cycleschemeSurchargeTotal\":0.0,\"IsClickAndCollectOnly\":false}"}
+
+
+
+successful checkout
+post - https://www.workingclassheroes.co.uk/wsCitrusStore.asmx/WightHandlePaymentSelector
+{"MethodType":"Standard","SpecialInstructions":"","PaymentMethod":"credit card","cardTypeUid":8,"cardType":"Visa","cardNumber":"4350443134461201","secureCode":"188","expMonth":"05","expYear":"2025","token":"","selectedShipping":{"IsPremium":false,"bookingCode":"","carrierCode":"","carrierCustom1":"","carrierCustom2":"","carrierCustom3":"","carrierServiceCode":"","carrierServiceTypeCode":"","collectionSlots":null,"collectionWindow":{"to":"2019-08-12T00:00:00","from":"2019-08-12T00:00:00"},"cutOffDateTime":"2019-08-12T00:00:00","deliverySlots":null,"deliveryWindow":{"to":"2019-08-13T00:00:00","from":"2019-08-13T00:00:00"},"groupCodes":null,"name":"","nominatableCollectionSlot":false,"nominatableDeliverySlot":false,"recipientTimeZone":null,"score":0,"senderTimeZone":null,"shippingCharge":0,"shippingCost":0,"taxAndDuty":0,"taxAndDutyStatusText":null,"vatRate":0},"paypalToken":"","payPalPayerID":""}
+
+
+3ds check 
+get - https://www.workingclassheroes.co.uk/ssl/secure/3DValidation.aspx
+
+3ds card needed
+get - https://www.workingclassheroes.co.uk/ssl/controls/3DAuthentication/3DRedirect.aspx
+
+3ds visa
+post - https://verifiedbyvisa.acs.touchtechpayments.com/v1/payerAuthentication
+PaReq:"eJxVUslOwzAQvfMVUT8gXhKnTjU1KougB6BAEYWbcQYaNUtxEtry9dhdoBwszXsevzeL4XRdFsEX2iavq2GPhbR3qk5gOreIF49oOosKbrBp9AcGeTbsccpEKmVfRIzF7kjGOOspmIwe8FPBXkk5oZADOUAnYc1cV60CbT7PxrcqpiIRfSB7CCXa8YUSnEZRLGiapHEiUiA7Gipdorrq0OZFoYOp1VlefQDZ0mDqrmrtRkmeADkA6Gyh5m27HBCyWq3CVW0X7o0pdNPM0dbYhKYOuwUB4jOB/FU46XzUOOV1nqmRvH7Vm+/060mWi7uXeHpfP8+eLruZXgyB+AzIdIuKU06pjFjAogFlA+G63/KgS1+SSlkau3Z3AJbeY3R8c8yAm7vFyhx6OiDA9bKu0GU49d8YMmyMevQbmuhNcDMZO2tPAflr5fzaj960bpoRipT3s3fOOUOpMaNvb1JQRpN39AvZJnmr3M2RCyq2Xh4A8TJkv2uy/xcu+vdffgCkasI4"
+TermUrl:"https://www.workingclassheroes.co.uk/ssl/controls/3DAuthentication/3DCallback.aspx?VendorTxCode=302337"
+MD:"201598875311431181121"
+
+
+3ds staying alive request
+post - https://poll.touchtechpayments.com/poll
+transToken:"ed5b94c74c9f5430010244d862ce4314550bfc02c58379c45ad598e44337e0b7"
+b4afe8bb0183f3f2225b90048336327e99778c2545e7061a1653fe030d988741
+
+
+self.sendWebhook(payment_method=payment, success=True)
+self.publicWebhook(payment_method=payment)
+
+---------------------------------------------------------------
+# Edit function names, and request names                       |
+# Edit prints to be more correct			       |
+# Try to get shipping charge and other from previous requests  |
+# Clean code						       |
+# See if you can remove any unwanted requests	               |
+# Test r.url to see if you can get 3DS cc url	               |
+---------------------------------------------------------------
+
+https://www.retro23.gr/gr/nike-air-jordan-1-retro-high-og-gs-198779-126.html
+https://www.retro23.gr/gr/nike-air-jordan-1-retro-high-og-198777-041.html
+https://www.retro23.gr/gr/nike-air-jordan-1-retro-high-og-198777-126.html
+https://www.retro23.gr/gr/nike-air-jordan-11-retro-198785-061.html
+https://www.retro23.gr/gr/nike-air-jordan-4-retro-216710-112.html
+https://www.retro23.gr/gr/nike-air-jordan-1-retro-high-og-gs-198779-062.html
