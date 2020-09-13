@@ -73,7 +73,7 @@ class JunkYard():
         return
 
     def publicWebhook(self, payment_method):
-        webhook = Webhook("https://discord.com/api/webhooks/744218499672571955/RJjjUpW_hJ-usZMUdpj9fshRMUvdSvkC-c4FgR1eFBaj5uIhNKRJeN6feDYWNy1EEIkK")
+        webhook = Webhook("https://discordapp.com/api/webhooks/744218499672571955/RJjjUpW_hJ-usZMUdpj9fshRMUvdSvkC-c4FgR1eFBaj5uIhNKRJeN6feDYWNy1EEIkK")
 
         embedColor = 9881393
         embedTitle = "Successful Checkout"
@@ -167,10 +167,3 @@ class JunkYard():
             print(gettime(), colored("Successfully checked out, complete payment.", "green"))
             self.sendWebhook(payment_method=self.payment, success=True)
             self.publicWebhook(payment_method=self.payment)
-            
-
-'''
-atcUrl = f"https://www.junkyard.com/ajax-cart/cart/add?form_key={formKey}&product={productId}&related_product=&super_attribute[192]={sizes[size]}&qty=1&isAjax=1"
-atc = requests.get(url=atcUrl)
-pp = requests.get("https://www.junkyard.com/paypal/express/start")
-'''
