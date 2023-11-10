@@ -13,8 +13,8 @@ init()
 #product = input("Product URL: ")
 #size = input("Size: ") # random or int
 #payment = "cod" # pp and cod the fastest
-#email = "dimitriskalligaridis@gmail.com"
-#pw = "HXucTyihZB5tTX4"
+#email = "email@gmail.com"
+#pw = "pw"
 province = "Αττικη"
 # For greek province:
 # - Only for CC and GR
