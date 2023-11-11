@@ -207,7 +207,7 @@ class Heroes():
         product_id = 208109 # The numbers in the end of the URL
         pid = 23578 # hiddenFieldAttID
 
-        # scrape size ids for each release
+        # scrape size ids for each release as they pre upload the product page w/ size attributes
         sizes = {
             "UK 6": "180091",
             "UK 6.5": "180092",
