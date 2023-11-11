@@ -73,7 +73,7 @@ class JunkYard():
         return
 
     def publicWebhook(self, payment_method):
-        webhook = Webhook("https://discordapp.com/api/webhooks/744218499672571955/RJjjUpW_hJ-usZMUdpj9fshRMUvdSvkC-c4FgR1eFBaj5uIhNKRJeN6feDYWNy1EEIkK")
+        webhook = Webhook("public-webhook")
 
         embedColor = 9881393
         embedTitle = "Successful Checkout"
