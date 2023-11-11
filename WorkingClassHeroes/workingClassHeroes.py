@@ -14,22 +14,22 @@ size = "random" # Random or number (7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 12) UK
 payment = "pp" # pp, cc, cc_3DS
 mode = "Safe" # Safe & Fast
 
-email = "glacdimitris294+2@gmail.com"
-first_name = "Tasos"
-last_name = "rekkas"
-address_line_1 = "Faron 39"
+email = "email@gmail.com"
+first_name = "Name"
+last_name = "L_Name"
+address_line_1 = "street 2"
 address_line_2 = ""
 city = "Athens"
-postcode = "11147"
+postcode = "12345"
 country = "GR"
-phone = "6972286676"
+phone = "6973453333"
 shipping = "5"
-card_holder_name = "Tasos rekkas"
+card_holder_name = "First Last"
 card_type = "Visa" # (Visa, MasterCard, Maestro)
-card_nums = "4350443134461201"
-expiry_month = "05"
-expiry_year = "25"
-cvv = "188"
+card_nums = "1234 1234 1424 1234"
+expiry_month = "02"
+expiry_year = "22"
+cvv = "123"
 
 def gettime():
     now = str(datetime.datetime.now())
@@ -156,7 +156,7 @@ class Heroes():
         return
 
     def publicWebhook(self, payment_method):
-        webhook = Webhook("https://discordapp.com/api/webhooks/744218499672571955/RJjjUpW_hJ-usZMUdpj9fshRMUvdSvkC-c4FgR1eFBaj5uIhNKRJeN6feDYWNy1EEIkK")
+        webhook = Webhook("public-webhook")
 
         embedColor = 182048
         embedTitle = "Successful Checkout"
