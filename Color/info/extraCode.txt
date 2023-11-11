@@ -1,3 +1,5 @@
+# preloaded sizes to avoid parsing on drop
+
 sizes = {
 	"35": 37,
          "36": 7,
