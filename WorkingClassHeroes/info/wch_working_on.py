@@ -17,7 +17,7 @@ init()
 product = "https://www.workingclassheroes.co.uk/nike-sb-dunk-high-pro-shoes-black-university-gold__205357"
 size = "7" # Random or number (7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 12)
 payment = "click_collect" # cc | pp | click_collect (pp only ready)
-email = "glacdimitris294@gmail.com"
+email = "email@gmail.com"
 first_name = "Joe"
 last_name = "Tei"
 address1 = ""
